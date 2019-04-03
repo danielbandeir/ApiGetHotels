@@ -25,7 +25,7 @@ SECRET_KEY = 'm54^6s_!vc*xfbey_!zg*h5(_m^c21m7vd8k*q+6a+$d)$u7#a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['apigetrest.herokuapp.com']
+ALLOWED_HOSTS = ['apigetrest.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -128,9 +128,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static") 
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

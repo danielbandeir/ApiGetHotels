@@ -6,3 +6,10 @@ class hotel(models.Model):
     language = models.CharField(max_length=20)
     background_image = models.CharField(max_length=20000)
     maps_image = models.CharField(max_length=20000)
+
+class pessoa(models.Model):
+    nome = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
+    cidade = models.CharField(max_length=255)
+    estado = models.CharField(max_length=15)
+    foto = models.CharField(max_length=20000)
