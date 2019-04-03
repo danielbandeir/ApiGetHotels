@@ -9,6 +9,7 @@ class hotel(models.Model):
 
 class pessoa(models.Model):
     nome = models.CharField(max_length=255)
+    senha = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
     cidade = models.CharField(max_length=255)
     estado = models.CharField(max_length=15)
