@@ -14,3 +14,9 @@ class pessoa(models.Model):
     cidade = models.CharField(max_length=255)
     estado = models.CharField(max_length=15)
     foto = models.CharField(max_length=20000)
+
+class comentario(models.Model):
+    nomePessoa = models.CharField(max_length=255)
+    tempo = models.CharField(max_length=255)
+    foto = models.CharField(max_length=20000)
+    texto = models.CharField(max_length=255)
