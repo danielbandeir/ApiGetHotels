@@ -20,3 +20,10 @@ class comentario(models.Model):
     tempo = models.CharField(max_length=255)
     foto = models.CharField(max_length=20000)
     texto = models.CharField(max_length=255)
+
+class interesses(models.Model):
+    nome = models.CharField(max_length=255)
+
+class amigos(models.Model):
+    nome = models.CharField(max_length=255)
+    foto = models.CharField(max_length=3000)
