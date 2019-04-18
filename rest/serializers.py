@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from .models import hotel, pessoa, comentario, interesses, amigos
+from .models import hotel, pessoa, comentario, interesses, amigos, vouchers
+
 
 class hotelSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -26,3 +27,7 @@ class amigosSerializer(serializers.HyperlinkedModelSerializer):
         model = amigos
         fields = '__all__'
 
+class vouchersSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = vouchers
+        fields ='__all__'

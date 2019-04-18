@@ -27,3 +27,9 @@ class interesses(models.Model):
 class amigos(models.Model):
     nome = models.CharField(max_length=255)
     foto = models.CharField(max_length=3000)
+
+class vouchers(models.Model):
+    nome = models.CharField(max_length=255)
+    decricao = models.CharField(max_length=455)
+    expirado = models.CharField(max_length=255)
+    foto = models.CharField(max_length=3000)

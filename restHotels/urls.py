@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from rest.views import hotelViewSet, pessoaViewSet, comentarioViewSet, amigosViewSet, interessesViewSet
+from rest.views import hotelViewSet, pessoaViewSet, comentarioViewSet, amigosViewSet, interessesViewSet, vouchersViewSet
 
 
 router = routers.DefaultRouter()
@@ -25,6 +25,7 @@ router.register(r'pessoa', pessoaViewSet)
 router.register(r'comentario', comentarioViewSet)
 router.register(r'interesses', interessesViewSet)
 router.register(r'amigos', amigosViewSet)
+router.register(r'vouchers', vouchersViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
