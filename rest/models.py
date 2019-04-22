@@ -33,3 +33,9 @@ class vouchers(models.Model):
     decricao = models.CharField(max_length=455)
     expirado = models.CharField(max_length=255)
     foto = models.CharField(max_length=3000)
+
+class chat(models.Model):
+    nome = models.CharField(max_length=255)
+    mensagem = models.CharField(max_length=100)
+    foto = models.CharField(max_length=3000)
+    lidas = models.CharField(max_length=255)
