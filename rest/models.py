@@ -42,3 +42,6 @@ class chat(models.Model):
 
 class linkService(models.Model):
     nome = models.CharField(max_length=1024)
+
+class isDebug(models.Model):
+    nome = models.CharField(max_length=1024)
