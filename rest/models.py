@@ -39,3 +39,6 @@ class chat(models.Model):
     mensagem = models.CharField(max_length=100)
     foto = models.CharField(max_length=3000)
     lidas = models.CharField(max_length=255)
+
+class linkService(models.Model):
+    nome = models.CharField(max_length=1024)
