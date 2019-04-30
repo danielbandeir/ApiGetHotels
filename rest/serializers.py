@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import hotel, pessoa, comentario, interesses, amigos, vouchers, chat, linkService, isDebug
+from .models import hotel, pessoa, comentario, interesses, amigos, vouchers, chat, linkService, isDebug, skin
 
 
 class hotelSerializer(serializers.HyperlinkedModelSerializer):
@@ -45,4 +45,9 @@ class linkServiceSerializer(serializers.HyperlinkedModelSerializer):
 class isDebugSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = isDebug
+        fields = "__all__"
+
+class skinSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = skin
         fields = "__all__"

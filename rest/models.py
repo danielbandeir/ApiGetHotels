@@ -45,3 +45,17 @@ class linkService(models.Model):
 
 class isDebug(models.Model):
     nome = models.CharField(max_length=1024)
+
+class skin(models.Model):
+    imagemSpash = models.CharField(max_length=3000)
+    imagemCapa = models.CharField(max_length=3000)
+    cor1 = models.CharField(max_length=22)
+    cor2 = models.CharField(max_length=22)
+    cor3 = models.CharField(max_length=22)
+    cor4 = models.CharField(max_length=22)
+    cor5 = models.CharField(max_length=22)
+    cor6 = models.CharField(max_length=22)
+    cor7 = models.CharField(max_length=22)
+    cor8 = models.CharField(max_length=22)
+    cor9 = models.CharField(max_length=22)
+    cor10 = models.CharField(max_length=22)
