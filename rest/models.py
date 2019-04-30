@@ -47,7 +47,6 @@ class isDebug(models.Model):
     nome = models.CharField(max_length=1024)
 
 class skin(models.Model):
-    
     splash_image = models.CharField(max_length=3000)
     background_image = models.CharField(max_length=3000)
     nome = models.CharField(max_length=255)
