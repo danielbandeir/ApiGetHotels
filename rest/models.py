@@ -61,3 +61,6 @@ class skin(models.Model):
     textFriendsColor = models.CharField(max_length=22)
     customBackgroundColor = models.CharField(max_length=22)
     customMainColor = models.CharField(max_length=22)
+
+class testConnection(models.Model):
+    test = models.CharField(max_length=255)
