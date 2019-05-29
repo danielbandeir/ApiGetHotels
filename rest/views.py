@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .models import hotel, pessoa, comentario, interesses, amigos, vouchers, chat, linkService, isDebug, skin, testConnection
-from .serializers import hotelSerializer, pessoaSerializer, comentarioSerializer, interessesSerializer, amigosSerializer, vouchersSerializer, chatSerializer, linkServiceSerializer, isDebugSerializer, skinSerializer, testConnectionSerializer
+from .models import hotel, pessoa, comentario, interesses, amigos, vouchers, chat, linkService, isDebug, skin, testConnection, voucher
+from .serializers import hotelSerializer, pessoaSerializer, comentarioSerializer, interessesSerializer, amigosSerializer, vouchersSerializer, chatSerializer, linkServiceSerializer, isDebugSerializer, skinSerializer, testConnectionSerializer, voucherSerializer
 
 
 class hotelViewSet(viewsets.ModelViewSet):
@@ -47,3 +47,7 @@ class skinViewSet(viewsets.ModelViewSet):
 class testConnectionViewSet(viewsets.ModelViewSet):
     queryset = testConnection.objects.all()
     serializer_class = testConnectionSerializer
+
+class voucherViewSet(viewsets.ModelViewSet):
+    queryset = voucher.objects.all()
+    serializer_class = voucherSerializer
