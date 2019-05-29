@@ -62,5 +62,25 @@ class skin(models.Model):
     customBackgroundColor = models.CharField(max_length=22)
     customMainColor = models.CharField(max_length=22)
 
+
+class testandoRest(models.Model):
+    name = models.CharField(max_length=255)
+
 class testConnection(models.Model):
     test = models.CharField(max_length=255)
+    name2 = models.ForeignKey(testandoRest, on_delete=models.CASCADE)
+
+class voucher(models.Model):
+    imageUrl = models.CharField(max_length=3000)
+    nameVoucher = models.CharField(max_length=255)
+    desc = models.CharField(max_length=255)
+    partner = models.CharField(max_length=255)
+    typeVoucher = models.CharField(max_length=255)
+    instructions = models.CharField(max_length=255)
+    minBuy = models.CharField(max_length=255)
+    maxBuy = models.CharField(max_length=255)
+    cMin = models.CharField(max_length=255)
+    valitityDe = models.CharField(max_length=255)
+    valitityAte = models.CharField(max_length=255)
+    rescue = models.CharField(max_length=255)
+    useOnly = models.CharField(max_length=255)
