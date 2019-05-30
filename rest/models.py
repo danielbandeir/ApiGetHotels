@@ -84,3 +84,4 @@ class voucher(models.Model):
     valitityAte = models.CharField(max_length=255)
     rescue = models.CharField(max_length=255)
     useOnly = models.CharField(max_length=255)
+    visibility = models.IntegerField(default=0)
