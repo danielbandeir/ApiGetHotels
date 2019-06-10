@@ -25,7 +25,7 @@ SECRET_KEY = 'm54^6s_!vc*xfbey_!zg*h5(_m^c21m7vd8k*q+6a+$d)$u7#a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['apigetrest.herokuapp.com', 'localhost', '127.0.0.1', 'stayrest.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
